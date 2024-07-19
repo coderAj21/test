@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedroom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./flipdown.css">
+</head>
+<body>
+    <div class="relative w-screen h-screen overflow-x-hidden">
+        <!-- Top Header Heading -->
+        <div class="w-full text-center bg-black text-slate-100 font-sans font-bold py-2 pr-4 mb-8">Pan Emirates Is Now PAN Home</div>
+            <header>
+                <!-- Header with input tag for search -->
+                <div class="top-0 z-10  w-full bg-white"> 
+                    <div class="w-[84.5%] mx-auto">
+                            <div class="flex flex-row justify-between items-center cursor-pointer my-2.5 font-sans">
+                                <img class="object-contain bg-transparent pr-4" src="https://www.panhomestores.com/media/logo/default/logo.png" alt="Logo">
+                                <div class="w-[80px] flex flex-col items-center gap-y-1.5 pl-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" class="w-[25px]"><path d="M12.5 20.8999L17.45 15.9499C18.4289 14.9709 19.0955 13.7236 19.3656 12.3658C19.6356 11.0079 19.4969 9.60052 18.9671 8.32148C18.4373 7.04244 17.54 5.94923 16.3889 5.18009C15.2378 4.41095 13.8844 4.00043 12.5 4.00043C11.1156 4.00043 9.76222 4.41095 8.61109 5.18009C7.45996 5.94923 6.56275 7.04244 6.03292 8.32148C5.50308 9.60052 5.36442 11.0079 5.63445 12.3658C5.90449 13.7236 6.57111 14.9709 7.55 15.9499L12.5 20.8999ZM12.5 23.7279L6.136 17.3639C4.87734 16.1052 4.02019 14.5016 3.67293 12.7558C3.32567 11.0099 3.50391 9.20035 4.1851 7.55582C4.86629 5.91129 6.01984 4.50569 7.49988 3.51677C8.97992 2.52784 10.72 2 12.5 2C14.28 2 16.0201 2.52784 17.5001 3.51677C18.9802 4.50569 20.1337 5.91129 20.8149 7.55582C21.4961 9.20035 21.6743 11.0099 21.3271 12.7558C20.9798 14.5016 20.1227 16.1052 18.864 17.3639L12.5 23.7279ZM12.5 12.9999C13.0304 12.9999 13.5391 12.7892 13.9142 12.4141C14.2893 12.0391 14.5 11.5304 14.5 10.9999C14.5 10.4695 14.2893 9.96078 13.9142 9.58571C13.5391 9.21064 13.0304 8.99992 12.5 8.99992C11.9696 8.99992 11.4609 9.21064 11.0858 9.58571C10.7107 9.96078 10.5 10.4695 10.5 10.9999C10.5 11.5304 10.7107 12.0391 11.0858 12.4141C11.4609 12.7892 11.9696 12.9999 12.5 12.9999ZM12.5 14.9999C11.4391 14.9999 10.4217 14.5785 9.67158 13.8283C8.92143 13.0782 8.5 12.0608 8.5 10.9999C8.5 9.93906 8.92143 8.92164 9.67158 8.17149C10.4217 7.42135 11.4391 6.99992 12.5 6.99992C13.5609 6.99992 14.5783 7.42135 15.3284 8.17149C16.0786 8.92164 16.5 9.93906 16.5 10.9999C16.5 12.0608 16.0786 13.0782 15.3284 13.8283C14.5783 14.5785 13.5609 14.9999 12.5 14.9999Z"></path></svg>
+                                    <p class="text-[12px] w-[80px]">Store Locator</p>
+                                </div>
+                                <div class="flex flex-col items-center justify-start gap-y-1.5">
+                                    <img class="w-[25px]" src="https://www.panhomestores.com/cdn-cgi/image/width=1024,quality=85,%20format=auto/media/wysiwyg/header/phone.png" alt="">
+                                    <span class="text-[12px]">(800 726)</span>
+                                </div>
+                                <!-- Input Box -->
+                                <div class="w-2/5 relative h-fit mx-6">
+                                    <input class="w-full border border-black text-sm p-3 px-4" 
+                                    type="text" name="search-bar" id="search-bar" placeholder="">
+                                    <!-- Search bar div without focus -->
+                                    <div id="search-bar-open" class="absolute pointer-events-none  top-3 w-full flex flex-row justify-between items-center gap-2 px-4">
+                                        <div class="w-full h-full flex flex-row items-center gap-x-4">
+                                            <div class="pointer-events-auto"><svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" class="w-[40px]"><path d="M11 19C12.846 19 14.543 18.365 15.897 17.312L20.293 21.708L21.707 20.294L17.311 15.898C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19ZM11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11C5 7.691 7.691 5 11 5Z"></path></svg></div>
+                                            <span  class="text-zinc-400 text-xs">Type your search criteria here...</span>
+                                        </div>
+                                        <div class="pointer-events-auto"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[40px] aspect-auto"><path d="M 20 5 H 16.83 L 15 3 H 9 L 7.17 5 H 4 C 3.4696 5 2.9609 5.2107 2.5858 5.5858 C 2.2107 5.9609 2 6.4696 2 7 V 19 C 2 19.5304 2.2107 20.0391 2.5858 20.4142 C 2.9609 20.7893 3.4696 21 4 21 H 20 C 20.5304 21 21.0391 20.7893 21.4142 20.4142 C 21.7893 20.0391 22 19.5304 22 19 V 7 C 22 6.4696 21.7893 5.9609 21.4142 5.5858 C 21.0391 5.2107 20.5304 5 20 5 Z M 20 19.4 H 3.6 V 6.6 H 8.05 L 9.88 4.6 H 14.12 L 15.95 6.6 H 20.4 V 19.4 Z M 12 8 C 10.6739 8 9.4022 8.5268 8.4645 9.4645 C 7.5268 10.4021 7 11.6739 7 13 C 7 14.3261 7.5268 15.5979 8.4645 16.5355 C 9.4022 17.4732 10.6739 18 12 18 C 13.3261 18 14.5979 17.4732 15.5355 16.5355 C 16.4732 15.5979 17 14.3261 17 13 C 17 11.6739 16.4732 10.4021 15.5355 9.4645 C 14.5979 8.5268 13.3261 8 12 8 Z M 12 16 C 11.2044 16 10.4413 15.6839 9.8787 15.1213 C 9.3161 14.5587 9 13.7956 9 13 C 9 12.2044 9.3161 11.4413 9.8787 10.8787 C 10.4413 10.3161 11.2044 10 12 10 C 12.7956 10 13.5587 10.3161 14.1213 10.8787 C 14.6839 11.4413 15 12.2044 15 13 C 15 13.7956 14.6839 14.5587 14.1213 15.1213 C 13.5587 15.6839 12.7956 16 12 16 Z"></path></svg></div>
+                                    </div>
+                                    <!-- Search Bar Div 2 after focused -->
+                                    <div id="search-bar-close" class="absolute w-fit pointer-events-none flex flex-row items-center justify-between gap-3 right-2 top-2">
+                                        <div id="cross" class="pt-1 pointer-events-auto"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class=""><path d="M16.192 6.34399L11.949 10.586L7.707 6.34399L6.293 7.75799L10.535 12L6.293 16.242L7.707 17.656L11.949 13.414L16.192 17.656L17.606 16.242L13.364 12L17.606 7.75799L16.192 6.34399Z"></path></svg></div>
+                                        <span class="text-zinc-400 text-xl">|</span>
+                                        <div class="pointer-events-auto pt-1"><svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" class="w-[40px]"><path d="M11 19C12.846 19 14.543 18.365 15.897 17.312L20.293 21.708L21.707 20.294L17.311 15.898C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19ZM11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11C5 7.691 7.691 5 11 5Z"></path></svg></div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center gap-y-1.5">
+                                    <svg viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg" class="w-[25px]"><path d="M16.86 14C16.94 13.34 17 12.68 17 12C17 11.32 16.94 10.66 16.86 10H20.24C20.4 10.64 20.5 11.31 20.5 12C20.5 12.69 20.4 13.36 20.24 14M15.09 19.56C15.69 18.45 16.15 17.25 16.47 16H19.42C18.46 17.65 16.93 18.93 15.09 19.56ZM14.84 14H10.16C10.06 13.34 10 12.68 10 12C10 11.32 10.06 10.65 10.16 10H14.84C14.93 10.65 15 11.32 15 12C15 12.68 14.93 13.34 14.84 14ZM12.5 19.96C11.67 18.76 11 17.43 10.59 16H14.41C14 17.43 13.33 18.76 12.5 19.96ZM8.5 8H5.58C6.53 6.34 8.07 5.06 9.9 4.44C9.3 5.55 8.85 6.75 8.5 8ZM5.58 16H8.5C8.85 17.25 9.3 18.45 9.9 19.56C8.07 18.93 6.53 17.65 5.58 16ZM4.76 14C4.6 13.36 4.5 12.69 4.5 12C4.5 11.31 4.6 10.64 4.76 10H8.14C8.06 10.66 8 11.32 8 12C8 12.68 8.06 13.34 8.14 14M12.5 4.03C13.33 5.23 14 6.57 14.41 8H10.59C11 6.57 11.67 5.23 12.5 4.03ZM19.42 8H16.47C16.15 6.75 15.69 5.55 15.09 4.44C16.93 5.07 18.46 6.34 19.42 8ZM12.5 2C6.97 2 2.5 6.5 2.5 12C2.5 14.6522 3.55357 17.1957 5.42893 19.0711C6.35752 19.9997 7.45991 20.7362 8.67317 21.2388C9.88642 21.7413 11.1868 22 12.5 22C15.1522 22 17.6957 20.9464 19.5711 19.0711C21.4464 17.1957 22.5 14.6522 22.5 12C22.5 10.6868 22.2413 9.38642 21.7388 8.17317C21.2362 6.95991 20.4997 5.85752 19.5711 4.92893C18.6425 4.00035 17.5401 3.26375 16.3268 2.7612C15.1136 2.25866 13.8132 2 12.5 2Z"></path></svg>
+                                    <span class="text-[12px] font-bold">العربية</span>
+                                </div>
+                                <div class="w-[80px] flex flex-col items-start gap-y-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 16" class="w-[60px]"><path d="M6.61061 2.43268L9.40662 1.52197V10.8167C9.40662 14.5674 6.59063 15.9295 4.20602 15.9295C3.33926 15.9295 2.01714 15.6259 1.25822 15.2145L0 12.3745C1.4739 13.3931 3.16349 13.4809 3.63881 13.4809C5.30843 13.4809 6.60661 12.2906 6.60661 10.3175V2.42868L6.61061 2.43268Z" class="MoreIcon-Primary"></path><path d="M26.2983 0.0078125H29.2621L31.0875 2.99955L32.9129 0.0078125H35.8767V8.51969H33.0447V4.3017L31.0875 7.32939H31.0396L29.0824 4.3017V8.51969H26.2983V0.0078125Z" class="MoreIcon-Primary"></path><path d="M45.8745 0.00798729H50.0326C51.5385 0.00798729 52.5011 0.383453 53.0963 0.978605C53.6075 1.48988 53.8751 2.12098 53.8751 2.99573V3.0197C53.8751 4.25794 53.2321 5.12071 52.1975 5.62L54.1787 8.51188H50.9313L49.3256 6.07934H48.7185V8.51188H45.8745V0V0.00798729ZM49.9487 4.05423C50.6278 4.05423 51.0432 3.75066 51.0432 3.22741V3.20344C51.0432 2.65622 50.6158 2.3886 49.9607 2.3886H48.7225V4.05423H49.9487Z" class="MoreIcon-Primary"></path><path d="M54.5664 0.0078125H61.88V2.34449H57.3624V3.20726H61.5205V5.26033H57.3624V6.18302H61.884V8.51969H54.5664V0.0078125Z" class="MoreIcon-Primary"></path><path d="M40.8618 1.69367C37.7622 1.69367 36.2684 3.81865 36.3123 6.80639V7.5014C36.3123 8.65176 36.6478 9.21496 35.5414 9.21496H19.7039V7.17786C19.7039 3.95046 18.5136 1.45801 15.0026 1.45801C11.9909 1.45801 10.2773 3.86258 10.2773 6.70254C10.2773 9.5425 12.0309 11.7514 15.0026 11.7514H16.864C16.4725 12.9856 15.434 13.4849 14.2437 13.4849C13.7684 13.4849 11.923 13.397 10.4531 12.3785L11.7113 15.2184C12.4703 15.6298 13.9441 15.9334 14.8109 15.9334C16.9758 15.9334 19.2526 14.783 19.644 11.7514H35.5574C36.3682 11.7154 37.1831 11.5436 37.8581 10.9285C38.637 11.5357 39.6995 11.9031 40.8698 11.9031C43.9255 11.9031 45.3994 9.73422 45.3554 6.81039C45.4193 3.84261 43.9454 1.69767 40.8698 1.69767M16.9359 9.21496H15.0066C13.9242 9.21496 13.0774 8.3482 13.0774 6.70254C13.0774 5.05688 13.9242 3.93049 15.0066 3.93049C16.0891 3.93049 16.9359 5.05688 16.9359 6.70254V9.21496ZM40.8698 9.34678C39.7434 9.34678 39.1802 8.43607 39.1802 6.81039C39.1802 5.1847 39.7434 4.25403 40.8698 4.25403C41.9962 4.25403 42.5394 5.1847 42.5394 6.81039C42.5394 8.43607 41.9762 9.34678 40.8698 9.34678Z" class="MoreIcon-Primary"></path><path d="M47.2728 10.4012C47.2329 10.4811 47.181 10.545 47.1171 10.5969C47.0492 10.6489 46.9733 10.6888 46.8854 10.7168C46.7975 10.7447 46.7017 10.7567 46.6018 10.7567H46.2423V11.3399H45.9268V9.52246H46.6418C46.7456 9.52246 46.8415 9.53844 46.9293 9.5664C47.0132 9.59436 47.0891 9.6343 47.149 9.69022C47.209 9.74215 47.2529 9.80606 47.2888 9.88195C47.3208 9.95385 47.3368 10.0417 47.3368 10.1336C47.3368 10.2335 47.3168 10.3253 47.2808 10.4012M46.9054 9.88994C46.8335 9.83402 46.7376 9.81005 46.6178 9.81005H46.2463V10.4651H46.6178C46.7376 10.4651 46.8335 10.4372 46.9054 10.3733C46.9773 10.3133 47.0092 10.2335 47.0092 10.1336C47.0092 10.0257 46.9733 9.94187 46.9014 9.88594" class="MoreIcon-Secondary"></path><path d="M47.9155 9.52246H48.2311V11.0523H49.1857V11.3399H47.9155V9.52246Z" class="MoreIcon-Secondary"></path><path d="M51.5223 11.3396H51.1828L50.9991 10.9003H50.1403L49.9526 11.3396H49.625L50.4239 9.51025H50.7194L51.5183 11.3396H51.5223ZM50.5717 9.88972L50.2601 10.6167H50.8872L50.5717 9.88972Z" class="MoreIcon-Secondary"></path><path d="M52.6292 11.3399H52.3056V9.81804H51.7305V9.52246H53.2043V9.81804H52.6292V11.3399Z" class="MoreIcon-Secondary"></path><path d="M54.1349 9.52246H53.8193V11.3399H54.1349V9.52246Z" class="MoreIcon-Secondary"></path><path d="M56.152 9.52246H56.4676V11.3399H56.1999L55.2014 10.0457V11.3399H54.8818V9.52246H55.1774L56.152 10.7807V9.52246Z" class="MoreIcon-Secondary"></path><path d="M58.7208 10.5526C58.7208 10.6884 58.7008 10.8082 58.6649 10.9081C58.6289 11.0119 58.577 11.0958 58.5091 11.1637C58.4412 11.2316 58.3613 11.2836 58.2654 11.3155C58.1696 11.3515 58.0617 11.3674 57.9419 11.3674C57.8221 11.3674 57.7182 11.3515 57.6223 11.3155C57.5265 11.2836 57.4466 11.2316 57.3787 11.1637C57.3108 11.0958 57.2589 11.0119 57.2229 10.9121C57.187 10.8122 57.167 10.6964 57.167 10.5646V9.51807H57.4826V10.5526C57.4826 10.7243 57.5225 10.8522 57.6064 10.94C57.6902 11.0279 57.8021 11.0719 57.9459 11.0719C58.0897 11.0719 58.2015 11.0279 58.2814 10.944C58.3613 10.8602 58.4052 10.7323 58.4052 10.5646V9.51807H58.7208V10.5486V10.5526Z" class="MoreIcon-Secondary"></path><path d="M60.3137 10.8925H60.3057L59.7345 10.0417V11.3399H59.4189V9.52246H59.7585L60.3137 10.3812L60.8649 9.52246H61.2044V11.3399H60.8889V10.0377L60.3137 10.8925Z" class="MoreIcon-Secondary"></path></svg>
+                                    <span class="text-[12px] mt-1">Join Loyality</span>
+                                </div>
+                                <div class="w-[40px] flex flex-col items-center gap-y-1.5">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-[#1d1f1c]"><path d="M12 2C9.243 2 7 4.243 7 7C7 9.757 9.243 12 12 12C14.757 12 17 9.757 17 7C17 4.243 14.757 2 12 2ZM12 10C10.346 10 9 8.654 9 7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7C15 8.654 13.654 10 12 10ZM21 21V20C21 16.141 17.859 13 14 13H10C6.14 13 3 16.141 3 20V21H5V20C5 17.243 7.243 15 10 15H14C16.757 15 19 17.243 19 20V21H21Z"></path></svg>
+
+                                    <span class="text-[12px]">Login</span>
+                                </div>
+                                <div class="w-[40px] flex flex-col items-center gap-y-1.5">
+                                    <svg width="24" height="24" viewBox="0 0 21 19"  xmlns="http://www.w3.org/2000/svg" class="fill-white stroke-black hover:fill-black"><path d="M9.82693 3.24001C10.2086 3.5878 10.7923 3.5878 11.174 3.24001C12.2616 2.24895 13.4219 1.50391 14.4965 1.50391C15.8043 1.50391 17.0455 2.01805 17.9985 2.96516C19.9655 4.94321 19.9621 8.00504 18.0004 9.9668L10.5854 17.3818C10.551 17.4162 10.5191 17.453 10.4901 17.492C10.4888 17.4938 10.4875 17.4954 10.4863 17.4967C10.4862 17.4967 10.4862 17.4967 10.4861 17.4967C10.4434 17.4246 10.3919 17.3581 10.3326 17.2988L3.00058 9.9668L3.00043 9.96665C1.03829 8.00535 1.03502 4.94267 2.99839 2.9692C3.95576 2.01771 5.19709 1.50391 6.50447 1.50391C7.57992 1.50391 8.73921 2.24884 9.82693 3.24001Z" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                    <span class="text-[12px]">Wishlist</span>
+                                </div>
+                                <div class="w-[40px] flex flex-col items-center gap-y-1.5">
+                                    <svg width="24" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg" class="fill-black"><path d="M 20.703 4.6175 C 20.516 4.3475 20.209 4.1865 19.881 4.1865 H 5.85 L 4.8 1.4165 C 4.45 0.6685 4.024 0.25 3.214 0.1865 H 0.881 V 1.8 H 3.214 L 7.958 13.5715 C 8.113 13.9435 8.477 14.1865 8.881 14.1865 H 16.881 C 17.298 14.1865 17.671 13.9275 17.818 13.5385 L 20.818 5.5385 C 20.933 5.2305 20.89 4.8865 20.703 4.6175 Z M 16.5 12.6 H 9.1 L 6.4 5.7 H 19 L 16.5 12.6 Z"></path><path d="M9.38104 18.1865C10.2095 18.1865 10.881 17.5149 10.881 16.6865C10.881 15.8581 10.2095 15.1865 9.38104 15.1865C8.55262 15.1865 7.88104 15.8581 7.88104 16.6865C7.88104 17.5149 8.55262 18.1865 9.38104 18.1865Z"></path><path d="M16.381 18.1865C17.2095 18.1865 17.881 17.5149 17.881 16.6865C17.881 15.8581 17.2095 15.1865 16.381 15.1865C15.5526 15.1865 14.881 15.8581 14.881 16.6865C14.881 17.5149 15.5526 18.1865 16.381 18.1865Z"></path></svg>
+                                    <span class="text-[12px]">Cart</span>
+                                </div>
+
+                            </div>          
+                    </div>
+                </div>
+                <!-- header for different type of Product -->
+                <div class=" w-full bg-[#f8f8f8] mt-8">
+                    <div class="w-[84.5%] mx-auto py-4 flex flex-row justify-between items-center text-[15px] leading-4 font-sans ">
+                        <span class="w-fit cursor-pointer hover:font-bold hover:underline decoration-2 underline-offset-8
+                        transition-all duration-200 ease-in">BEDROOM</span>
+                        <span class="w-fit cursor-pointer hover:font-bold hover:underline decoration-2 underline-offset-8
+                        transition-all duration-200 ease-in">SOFAS</span>
+                        <span class="w-fit cursor-pointer hover:font-bold hover:underline decoration-2 underline-offset-8
+                        transition-all duration-200 ease-in">DINING ROOM</span>
+                        <span class="w-fit cursor-pointer hover:font-bold hover:underline decoration-2 underline-offset-8
+                        transition-all duration-200 ease-in">LIVING ROOM</span>
+                        <span class="w-fit cursor-pointer hover:font-bold hover:underline decoration-2 underline-offset-8
+                        transition-all duration-200 ease-in">HOME OFFICE</span>
+                        <span class="w-fit cursor-pointer hover:font-bold hover:underline decoration-2 underline-offset-8
+                        transition-all duration-200 ease-in">OUTDOOR</span>
+                        <span class="w-fit cursor-pointer hover:font-bold hover:underline decoration-2 underline-offset-8
+                        transition-all duration-200 ease-in">KIDS & TEENS</span>
+                        <span class="w-fit cursor-pointer hover:font-bold hover:underline decoration-2 underline-offset-8
+                        transition-all duration-200 ease-in">HOUSEHOLD</span>
+                        <span class="w-fit cursor-pointer hover:font-bold hover:underline decoration-2 underline-offset-8
+                        transition-all duration-200 ease-in">ONLINE EXCLUSIVE</span>
+                        <span class="text-[#c64739] font-medium w-fit cursor-pointer hover:font-bold hover:underline decoration-2 underline-offset-8
+                        transition-all duration-200 ease-in">OFFERS</span>
+                        <span class="w-fit cursor-pointer hover:font-bold hover:underline decoration-2 underline-offset-8
+                        transition-all duration-200 ease-in">SHOP ALL</span>
+                    </div>
+                </div>
+                <!-- header part 3 for offer with time -->
+                <div class="relative w-screen flex flex-row justify-center gap-2 bg-black text-slate-100 font-sans font-semibold py-1">
+                    <p class="text-2xl font-bold pr-[18%]">Prime offers end in...</p>
+                    <div id="flipdown" class="absolute top-0 right-[50%] left-[50%] flipdown"></div>
+                </div>
+            </header>
+            <section>
+                <!-- Section part 1 -->
+                <div class="w-full">
+                    <div class="w-[84.5%] mx-auto flex flex-row items-center gap-3 py-3 text-sm text-zinc-700 font-bold font-sans">
+                        <span>Home</span>
+                        <svg width="16" height="16" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" class="w-[12px] mt-px "><path d="M5.12359 12L10.1236 6.99999L5.12359 2L3.88477 3.23883L7.64593 6.99999L3.88477 10.7612L5.12359 12Z"></path></svg>
+                        <span>Furniture</span>
+                        <svg width="16" height="16" viewBox="0 0 14 14"  xmlns="http://www.w3.org/2000/svg" class="w-[12px] mt-px"><path d="M5.12359 12L10.1236 6.99999L5.12359 2L3.88477 3.23883L7.64593 6.99999L3.88477 10.7612L5.12359 12Z"></path></svg>
+                        <span class="font-normal">Bedroom</span>
+                    </div>
+                    <div class="w-full h-fit bg-[#f8f8f8]">
+                        <div class="w-[84.5%] mx-auto flex flex-row items-center justify-between py-[5.8%]">
+                            <div class=" w-[50%] flex flex-col gap-y-2">
+                                <div class="w-[175px] border-2 border-black mb-3"></div>
+                                <p class="text-4xl pb-4 font-black gothic underline underline-offset-8 text-leff">BEDROOM</p>
+                                <p class="text-sm gothic">Choose the ideal bedroom furniture from our extensive range to create the ideal sleeping space in your home.
+                                    We have beds of all sizes, cupboards and nightstands to solve any storage issues, and time-saving bedroom sets
+                                    curated by our experts so you can quickly build your dream room.
+                                </p>
+                            </div>
+                            <img src="https://www.panhomestores.com/cdn-cgi/image/width=700,quality=85,%20format=auto/media/catalog/category/CLP_-BANNER_-_FurnituR_720-264-CLB_BANNERS_-Bedroom.png"
+                                 class="w-[50%]" alt="Bedroom_image_example">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Main section -->
+            <section>
+                <div class="w-[84.5%] h-screen mx-auto flex flex-col my-4">
+                    <!-- main section div 1 -->
+                    <div class="flex flex-row justify-between items-start main-div-1">
+                        <!-- Drop down div -->
+                        <div id="accordian" class="w-[25%] px-4 py-2 overflow-hidden flex flex-col" >
+                            <div class="item 1 active px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Bedroom</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                                <div class="content flex flex-col transition-all ease-in-out duration-500">
+                                    <span>Beds</span>
+                                    <span>Bedroom Sets</span>
+                                    <span>Wardrobes</span>
+                                    <span>Modular</span>
+                                    <span>Dressers</span>
+                                    <span>Night Stands</span>
+                                    <span>Chest Of Drawers</span>
+                                    <span>Bedroom Add-Ons</span>
+
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+                            <div class="item 2 px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Mattresses</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                                <div class="content flex flex-col transition-all ease-in-out duration-500">
+                                    <span>Pocketed Spring</span>
+                                    <span>Foam</span>
+                                    <span>Bonnel Spring</span>
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+                            <div class="item 3 px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Soft Furnishings</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                                <div class="content flex flex-col transition-all ease-in-out duration-500">
+                                    <span>Soft Furnishings</span>
+                                    <span>Cushions</span>
+                                    <span>Bedlinen</span>
+                                    <span>Throws & Blankets</span>
+                                    <span>Duvets & Pillows</span>
+                                    <span>Bed Protection</span>
+                                    <span>Window Treatment</span>
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+                            <div class="item 4 px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Bathroom</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                                <div class="content flex flex-col transition-all ease-in-out duration-500">
+                                    <span>Bathroom</span>
+                                    <span>Shower</span>
+                                    <span>Bath Textiles</span>
+                                    <span>Bathroom Storage</span>
+                                    <span>Bath Accessories</span>
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+                            <div class="item 5 px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Utility & Storage</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                                <div class="content flex flex-col transition-all ease-in-out duration-500">
+                                    <span>Utility & Storage</span>
+                                    <span>Home Improvement</span>
+                                    <span>Storage</span>
+                                    <span>Laundry</span>
+                                    <span>Cleaning</span>
+
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+                        </div>
+                        <!-- Content Div -->
+                        <div class="w-[75%]">
+                            <!-- furniture content -->
+                            <p class="text-2xl font-sans font-semibold my-4">Bedroom</p>
+                            <div class="w-full flex flex-wrap">
+                                <div class=" relative w-[225px] aspect-square flex flex-col justify-center items-center new_shadow">
+                                    <img src="https://www.panhomestores.com/cdn-cgi/image/width=225,quality=85,%20format=auto/media/catalog/category/PLP_Banners_FUR-_BEDROOM_720-288-PLP_BANNER_Beds.png" 
+                                        class="object-contain"   alt="">                                
+                                    <p class="absolute bottom-4">BEDS</p>
+                                </div>
+                                <div class=" relative w-[225px] aspect-square flex flex-col justify-center items-center new_shadow">
+                                    <img src="https://www.panhomestores.com/cdn-cgi/image/width=225,quality=85,%20format=auto/media/catalog/category/PLP_Banners_FUR-_BEDROOM_720-288-PLP_BANNER_Bedromm_set.png" 
+                                        class="object-contain"   alt="">                                
+                                    <p class="absolute bottom-4">BEDROOM SETS</p>
+                                </div>
+                                <div class=" relative w-[225px] aspect-square flex flex-col justify-center items-center new_shadow">
+                                    <img src="https://www.panhomestores.com/cdn-cgi/image/width=225,quality=85,%20format=auto/media/catalog/category/PLP_Banners_FUR-_BEDROOM_720-288-PLP_BANNER_Wardrobes.png" 
+                                        class="object-contain"   alt="">                                
+                                    <p class="absolute bottom-4">WARDROBES</p>
+                                </div>
+                                <div class=" relative w-[225px] aspect-square flex flex-col justify-center items-center new_shadow">
+                                    <img src="https://www.panhomestores.com/cdn-cgi/image/width=225,quality=85,%20format=auto/media/catalog/category/PLP_Banners_FUR-_BEDROOM_720-288-PLP_BANNER_Modular_.jpg" 
+                                        class="object-contain"   alt="">                                
+                                    <p class="absolute bottom-4">MODULOR</p>
+                                </div>
+                                <div class=" relative w-[225px] aspect-square flex flex-col justify-center items-center new_shadow">
+                                    <img src="https://www.panhomestores.com/cdn-cgi/image/width=225,quality=85,%20format=auto/media/catalog/category/PLP_Banners_FUR-_BEDROOM_720-288-PLP_BANNER_Dressers.png" 
+                                        class="object-contain"   alt="">                                
+                                    <p class="absolute bottom-4">DRESSER</p>
+                                </div>
+                                <div class=" relative w-[225px] aspect-square flex flex-col justify-center items-center new_shadow">
+                                    <img src="https://www.panhomestores.com/cdn-cgi/image/width=225,quality=85,%20format=auto/media/catalog/category/PLP_Banners_FUR-_BEDROOM_720-288-PLPBANNER_Night_Stands.png" 
+                                        class="object-contain"   alt="">                                
+                                    <p class="absolute bottom-4">NIGHT STANDS</p>
+                                </div>
+                                <div class=" relative w-[225px] aspect-square flex flex-col justify-center items-center new_shadow">
+                                    <img src="https://www.panhomestores.com/cdn-cgi/image/width=225,quality=85,%20format=auto/media/catalog/category/PLP_Banners_FUR-_BEDROOM_720-288-PLP_BANNER_Chest_Of_Drawers.png" 
+                                        class="object-contain"   alt="">                                
+                                    <p class="absolute bottom-4">CHEST OF DRAWERS</p>
+                                </div>
+                                <div class=" relative w-[225px] aspect-square flex flex-col justify-center items-center new_shadow">
+                                    <img src="https://www.panhomestores.com/cdn-cgi/image/width=225,quality=85,%20format=auto/media/catalog/category/PLP_Banners_FUR-_BEDROOM_720-288-PLP_BANNER_Bedroom_Add-Ons.jpg" 
+                                        class="object-contain"   alt="">                                
+                                    <p class="absolute bottom-4">BEDROOM ADD-ONS</p>
+                                </div>
+                            </div>
+                            <!-- Buttons and drop down -->
+                        </div>
+                    </div>
+                    <!-- Main section div 2 -->
+                    <div class="flex flex-row justify-between items-start">
+                        <!-- accordian div -->
+                        <div id="accordian" class="w-[25%] px-4 py-2 overflow-hidden flex flex-col my-10" >
+                            <p class="font-bold font-sans text-base my-6 px-1">YOUR SELECTION:</p>
+                            <div class="w-[95%] border bg-zinc-100 my-4"></div>
+                            <div class="item 1  px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Categories</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                                <div class="content flex flex-col gap-y-2 my-2 transition-all ease-in-out duration-500">
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="modular-beds-bedframes" class="heading">Modular Beds & Bedframes
+                                        <span class="text-neutral-400">(2015)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="beds" class="heading">Beds
+                                        <span class="text-neutral-400">(197)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="wardrobes" class="heading">Wardrobes
+                                        <span class="text-neutral-400">(101)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="dressers" class="heading">Dressers
+                                        <span class="text-neutral-400">(91)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="night-stands" class="heading">Night Stands
+                                        <span class="text-neutral-400">(84)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="bedroom-sets" class="heading">Bedroom Sets
+                                        <span class="text-neutral-400">(63)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="chest-of-drawers" class="heading">Chest Of Drawers
+                                        <span class="text-neutral-400">(48)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="bedroom-add-ons" class="heading">Bedroom Add-Ons
+                                        <span class="text-neutral-400">(39)</span></label>
+                                    </div>                          
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+                            <div class="item 2  px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Features</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                                <div class="content flex flex-col gap-y-2 my-2 transition-all ease-in-out duration-500">
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="usb-connectors" class="heading">USB Connectors
+                                        <span class="text-neutral-400">(3)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="high-floor-clearance" class="heading">High Floor Clearance
+                                        <span class="text-neutral-400">(4)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="extendable" class="heading">Extendable
+                                        <span class="text-neutral-400">(3)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="poster" class="heading">Poster
+                                        <span class="text-neutral-400">(3)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="tufted" class="heading">Tufted
+                                        <span class="text-neutral-400">(1101)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="mirror-finish" class="heading">Mirror Finish
+                                        <span class="text-neutral-400">(3)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="bench" class="heading">Bench
+                                        <span class="text-neutral-400">(24)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="comfortable-seat" class="heading">Comfortable Seat
+                                        <span class="text-neutral-400">(1)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="storage" class="heading">Storage
+                                        <span class="text-neutral-400">(536)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="sturdy" class="heading">Sturdy
+                                        <span class="text-neutral-400">(3)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="drawers" class="heading">Drawers
+                                        <span class="text-neutral-400">(479)</span></label>
+                                    </div>
+
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+                            <div class="item 3  px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Filling</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                                <div class="content flex flex-col gap-y-2 my-2 transition-all ease-in-out duration-500">
+                                    <div class="checkbox">
+                                    <input type="checkbox">
+                                    <label for="foam" class="heading">Foam
+                                    <span class="text-neutral-400">(2)</span></label>
+                                </div>
+
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+                            <div class="item 4  px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Material</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                                <div class="content flex flex-col gap-y-2 my-2 transition-all ease-in-out duration-500">
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="metal" class="heading">Metal
+                                        <span class="text-neutral-400">(7)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="wood" class="heading">Wood
+                                        <span class="text-neutral-400">(44)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="leather" class="heading">Leather
+                                        <span class="text-neutral-400">(2)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="marble" class="heading">Marble
+                                        <span class="text-neutral-400">(3)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="engineered-wood" class="heading">Engineered Wood
+                                        <span class="text-neutral-400">(73)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="oak-wood" class="heading">Oak Wood
+                                        <span class="text-neutral-400">(46)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="pine-wood" class="heading">Pine Wood
+                                        <span class="text-neutral-400">(4)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="acacia-wood" class="heading">Acacia Wood
+                                        <span class="text-neutral-400">(7)</span></label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="mango-wood" class="heading">Mango Wood
+                                        <span class="text-neutral-400">(1)</span></label>
+                                    </div>
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+                            <div class="item 5  px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Mattress Type</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="content flex flex-col gap-y-2 my-2 transition-all ease-in-out duration-500">
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="divan" class="heading">Divan
+                                        <span class="text-neutral-400">(444)</span></label>
+                                    </div>
+
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+                            <div class="item 6 active px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Size</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                                <div class="content flex flex-col gap-y-2 my-2 transition-all ease-in-out duration-500">
+                                    <p class="uppercase border border-black w-fit px-2 text-sm my-1">Super King</p>
+                                    <p class="uppercase border border-black w-fit px-2 text-sm my-1">King</p>
+                                    <p class="uppercase border border-black w-fit px-2 text-sm my-1">Queen</p>
+                                    <p class="uppercase border border-black w-fit px-2 text-sm my-1">Twin</p>
+                                    <p class="uppercase border border-black w-fit px-2 text-sm my-1">Single</p>
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+                            <div class="item 7 px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Soft Close</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                                <div class="content flex flex-col gap-y-2 my-2 transition-all ease-in-out duration-500">
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                        <label for="yes" class="heading">Yes
+                                        <span class="text-neutral-400">(1)</span></label>
+                                    </div>
+
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+                            <div class="item 7 px-1 pr-4">
+                                <div class="header flex flex-row justify-between items-center cursor-pointer">
+                                    <p>Table Top</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" 
+                                        class="size-6 font-bold activeIcon ">
+                                        <path d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="size-6 font-bold inactiveIcon">
+                                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                                <div class="content flex flex-col gap-y-2 my-2 transition-all ease-in-out duration-500">
+                                    <div class="checkbox">
+                                    <input type="checkbox">
+                                    <label for="marble" class="heading">Marble
+                                    <span class="text-neutral-400">(1)</span></label>
+                                </div>
+
+                                </div>
+                                <div class="w-full border bg-zinc-100 my-4"></div>
+                            </div>
+
+                        </div>
+                        <!-- Product Div -->
+                        <div class="w-[75%]">
+                            <div class="w-full my-10">
+                            <div class="w-full my-4 flex flex-row justify-between items-center">
+                                <div class="flex flex-row items-center gap-1">
+                                    <div id="btn" class="bg-[#f8f8f8] p-2.5 cursor-pointer border-2 border-black"><svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" ><path d="M10 3H4C3.448 3 3 3.448 3 4V10C3 10.552 3.448 11 4 11H10C10.552 11 11 10.552 11 10V4C11 3.448 10.552 3 10 3ZM9 9H5V5H9V9ZM14 11H20C20.553 11 21 10.552 21 10V4C21 3.448 20.553 3 20 3H14C13.447 3 13 3.448 13 4V10C13 10.552 13.447 11 14 11ZM15 5H19V9H15V5ZM3 20C3 20.552 3.448 21 4 21H10C10.552 21 11 20.552 11 20V14C11 13.448 10.552 13 10 13H4C3.448 13 3 13.448 3 14V20ZM5 15H9V19H5V15ZM13 20C13 20.552 13.447 21 14 21H20C20.553 21 21 20.552 21 20V14C21 13.448 20.553 13 20 13H14C13.447 13 13 13.448 13 14V20ZM15 15H19V19H15V15Z"></path></svg></div>
+                                    <div id="btn"  class="bg-[#f8f8f8] p-2.5 cursor-pointer"><svg width="27" height="27" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" ><path d="M3 5H5.25V7.33333H3V5ZM3 10.8333H5.25V13.1667H3V10.8333ZM3 16.6667H5.25V19H3V16.6667ZM21 7.33333V5H19.65H8.85H7.52587V7.33333H8.85H19.65H21ZM7.5 10.8333H21V13.1667H7.5V10.8333ZM7.5 16.6667H21V19H7.5V16.6667Z"></path></svg></div>
+                                    <span class="mx-4 gothic">2343 items</span>
+                                </div>
+                                <div>
+                                    <select class="w-[200px] border p-2 px-4" name="choose-option" id="choose-option">
+                                        <option value="Best_match">Best match</option>
+                                        <option value="Best_match">New Arrivals</option>
+                                        <option value="low_price">Price: Low to High</option>
+                                        <option value="high_price">Price: High to Low</option>
+                                        <option value="Best_match">Biggest Saving</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            </div>
+                            <div class="flex flex-wrap items-center gap-4" id="caraousel-div">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+<script type="module" src="./index.js"></script>
+</body>
+</html>
